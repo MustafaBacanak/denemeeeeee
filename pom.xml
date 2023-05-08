@@ -111,7 +111,7 @@
                 <version>3.0.0-M1</version>
                 <configuration>
                     <parallel>classes</parallel>
-                    <reuseForks>true</reuseForks>
+                    <reuseForks>false</reuseForks>
                     <forkCount>1</forkCount>
                     <argLine>-Duser.language=en</argLine>
                     <argLine>-Xmx1024m</argLine>
