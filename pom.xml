@@ -113,7 +113,8 @@
                     <parallel>classes</parallel>
                     <forkMode>perthread</forkMode>
                     <threadCount>2</threadCount>
-                    <reuseForks>false</reuseForks>
+                    <reuseForks>true</reuseForks>
+                    <forkCount>1</forkCount>
                     <argLine>-Duser.language=en</argLine>
                     <argLine>-Xmx1024m</argLine>
                     <argLine>-XX:MaxPermSize=256m</argLine>
@@ -123,10 +124,7 @@
                         <include>**/runners/*TestRunner*.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <reuseForks>true</reuseForks>
-                    <forkCount>10</forkCount>
                 </configuration>
-
             </plugin>
         </plugins>
     </build>
